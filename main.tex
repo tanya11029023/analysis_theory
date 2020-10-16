@@ -19,11 +19,30 @@ $f(x) = \frac{1}{x^{3}} = x^{-3} \longrightarrow f'(x) = (-3) \cdot x^{-4} = -\f
 $f(x) = sin(x) \longrightarrow f'(x) = cos(x) $ \\
 $f(x) = cos(x) \longrightarrow f'(x) = -sin(x) $ \\
 3. Exponentialfunktion \\
-$f(x) = e^x \longrightarrow f'(x)=e^x$
+$f(x) = e^x \longrightarrow f'(x)=e^x$ \\
 4. Logarithmusfunktion \\
 $ f(x) = ln(x) \longrightarrow f'(x) = \frac{1}{x}$
 \section{Funktionen mit der Summen- und Faktorregel ableiten}
-
+Zusammengesetzte Funktionen mit der Produkt-, Quotienten und Kettenregel ableiten. \\ 
+1. Summen- und Faktorregel \\
+$f(x) = k_1 \cdot f_1(x) + k_2 \cdot f_2(x) \longrightarrow f'(x) = k_1 \cdot f_1'(x) + k_2 \cdot f_2'(x) $ \\
+Beispiele: \\
+$f(x) = 5 \cdot x^3 + 4 \cdot x^2 \longrightarrow f'(x) = 5 \cdot 3 \cdot x^2 + 4 \cdot 2 \cdot x = 15 \cdot x^2 + 8 \cdot x$ \\
+$f(x) = \frac{3}{x^2} - 6 \cdot \sqrt{x} \longrightarrow f'(x) = 3 \cdot (-2) \cdot x^{-3} - 6 \cdot \frac{1}{2} \cdot x^{-\frac{1}{2}} = - 6 \cdot x^{-3} - 3 \cdot x^{-\frac{1}{2}} = \frac{6}{x^3} - \frac{3}{\sqrt{x}}  $ \\
+2. Produktregel \\
+$f(x) = u(x) \cdot v(x) = u'(x) \cdot v(x) + u(x) \cdot v'(x) $ \\
+Beispiele: \\ 
+$f(x) = (2x+5) \cdot e^x \longrightarrow f'(x) = 2 \cdot e^x + (2x+5) \cdot e^x = (2x + 7) \cdot e^x $
+$f(x) = (x^2 + 3x - 1) \cdot e^x \longrightarrow f'(x) = (2x+3) \cdot e^x + (x^2 + 3x -1) \cdot e^x = (x^2 + 5x +2) \cdot e^x $ \\ 
+3. Falls Funktionsterm als Bruch geschrieben werden kann \textrightarrow  Quotientenregel: \\
+$f(x) = \frac{u(x)}{v(x)} \longrightarrow f'(x) = \frac{u'(x) \cdot v(x) - u(x) \cdot v'(x)}{v^2(x)}$ \\ 
+Produkt- und Kettenregel zusammengesetzt: \\
+$f(x) = \frac{u(x)}{v(x)} = u(x) \cdot (v(x))^{-1} \longrightarrow 
+f'(x) = u'(x) \cdot v(x)^{-1} + u(x) \cdot (-1) \cdot (v(x))^{-2} \cdot v'(x) = \frac{u'(x)}{v(x)} - \frac{u(x) \cdot v'(x)}{v^2(x)} = \frac{u'(x) \cdot v(x) - u(x) \cdot v'(x)}{v^2(x)} $ \\ 
+4. Kettenregel \\
+$(u\bullet v)'(x_0) = u'(v(x_0)) \cdot v'(x_0)$ \\ 
+$f(x) = g(h(x)) \longrightarrow f'(x) = g'(h(x) \cdot h'(x))$
+$f(x) = e^{-x^2} \longrightarrow f'(x) = e^{x \cdot ln(3)} \cdot ln(3) = 3^x \cdot ln(3) $
 \section{Funktionen mit der Produkt-, Quotienten- und Kettenregel ableiten}
 
 \end{document}
